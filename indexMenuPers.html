@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú del día</title>
+    <link rel="stylesheet" href="indexMenuPers.css">
+    <link rel="icon" type="image/jpeg" href="sutebaIcon.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <header>
+        <div class="headImages">
+            <div class="leftIma"><img src="sol.png" alt=""></div>
+            <div class="rightIma"><img src="logoSuteba.jpg" alt=""></div>
+        </div>
+        <h1>Menú del día</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Entrada</h2>
+            <label for="entrada-select" class="sr-only">Seleccione la entrada:</label>
+            <select id="entrada-select">
+                </select>
+            <div id="entrada-submenu-container" style="display:none;">
+
+                <label for="entrada-submenu" class="sr-only">Submenú de entrada:</label>
+                <select id="entrada-submenu">
+                    </select>
+            </div>
+        </section>
+        <section>
+            <h2>Plato Principal</h2>
+             <label for="plato-principal-select" class="sr-only">Seleccione el plato principal:</label>
+            <select id="plato-principal-select">
+                </select>
+            <div id="plato-principal-submenu-container" style="display:none;">
+                <label for="plato-principal-submenu" class="sr-only">Submenú del plato principal:</label>
+                <select id="plato-principal-submenu">
+                    </select>
+            </div>
+        </section>
+        <section>
+            <h2>Postre</h2>
+            <label for="postre-select" class="sr-only">Seleccione el postre:</label>
+            <select id="postre-select">
+                </select>
+            <div id="postre-submenu-container" style="display:none;">
+                <label for="postre-submenu" class="sr-only">Submenú del postre:</label>
+                <select id="postre-submenu">
+                    </select>
+            </div>
+        </section>
+    </main>
+    <button class="print-button" onclick="window.print()">
+        <img class="print-icon" src="snowflake1.png" alt="Snowflake">
+    </button>
+    
+    <footer>
+        </footer>
+    <script src="indexMenu.js"></script>
+</body>
+</html>

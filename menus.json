@@ -1,0 +1,362 @@
+{
+  "acompanamientos_carnicos": [
+    "--",
+    "con Ensalada del Chef",
+    "con Puré de Batatas",
+    "con Puré de Papas",
+    "con Arroz Pilaf",
+    "a la Suiza",
+    "con Queso Gratinado",
+    "con Panceta y Verdeo",
+    "con Papas a la Provenzal",
+    "con Ensaladilla",
+    "con Ensalada",
+    "con Papas al Natural",
+    "Champignon, Crema y Blanco de Ave",
+    "con Puré Mixto",
+    "con Estofado",
+    "con Papas Bravas y Criolla",
+    "con Tomates Asados",
+    "con Risotto de Verduras",
+    "con Papas a la Crema de Verdeo"
+  ],
+  "entrada": [
+    {
+      "nombre": "Bastones de Muzzarella Rebozados",
+      "submenu": []
+    },
+    {
+      "nombre": "Bruschetta Mediterránea",
+      "submenu": []
+    },
+    {
+      "nombre": "Croquetas de Espinaca y Queso Azul",
+      "submenu": []
+    },
+    {
+      "nombre": "Crunch de Pollo con Ali - Oli",
+      "submenu": []
+    },
+    {
+      "nombre": "Empanadas Capresse",
+      "submenu": []
+    },
+    {
+      "nombre": "Empanadas Criollas",
+      "submenu": []
+    },
+    {
+      "nombre": "Ensalada Caesar",
+      "submenu": []
+    },
+    {
+      "nombre": "Ensalada Capresse",
+      "submenu": []
+    },
+    {
+      "nombre": "Ensalada Lucho’s Cheff",
+      "submenu": []
+    },
+    {
+      "nombre": "Fatay",
+      "submenu": []
+    },
+    {
+      "nombre": "Jamón con Ensalada Rusa",
+      "submenu": []
+    },
+    {
+      "nombre": "Mayonesa de Ave",
+      "submenu": []
+    },
+    {
+      "nombre": "Mil Hojas de Papa Gratinada",
+      "submenu": []
+    },
+    {
+      "nombre": "Muzzarellitas",
+      "submenu": []
+    },
+    {
+      "nombre": "Papas Cheddar",
+      "submenu": []
+    },
+    {
+      "nombre": "Papines Rellenos",
+      "submenu": []
+    },
+    {
+      "nombre": "Quesadillas",
+      "submenu": []
+    },
+    {
+      "nombre": "Quesadillas con Pico de Gallo",
+      "submenu": []
+    },
+    {
+      "nombre": "Quiché de Calabaza y Muzzarella",
+      "submenu": []
+    },
+    {
+      "nombre": "Tacos de Pollo",
+      "submenu": []
+    },
+    {
+      "nombre": "Tarta de Jamón y Queso",
+      "submenu": []
+    },
+    {
+      "nombre": "Tortilla Española",
+      "submenu": []
+    },
+    {
+      "nombre": "Tortillin de Papa",
+      "submenu": []
+    }
+  ],
+  "principal": [
+    {
+      "nombre": "Bondiola Grillada",
+      "submenu_ref": "acompanamientos_carnicos"
+    },
+    {
+      "nombre": "Canelones de Verdura y Salsa Bechamel",
+      "submenu": []
+    },
+    {
+      "nombre": "Caneloni a la Rossini",
+      "submenu": []
+    },
+    {
+      "nombre": "Carne al Horno",
+      "submenu_ref": "acompanamientos_carnicos"
+    },
+    {
+      "nombre": "Carré de Cerdo a la Riojana",
+      "submenu_ref": "acompanamientos_carnicos"
+    },
+    {
+      "nombre": "Escalopines de Ternera",
+      "submenu_ref": "acompanamientos_carnicos"
+    },
+    {
+      "nombre": "Lasagna de Berenjenas",
+      "submenu": [
+        "--",
+        "Salsa Bechamel",
+        "Salsa de Tomate y Queso"
+      ]
+    },
+    {
+      "nombre": "Lasagna de Carne y Verduras",
+      "submenu": [
+        "--",
+        "Salsa Bechamel",
+        "Salsa de Tomate y Carne"
+      ]
+    },
+    {
+      "nombre": "Milanesa de Peceto",
+      "submenu_ref": "acompanamientos_carnicos"
+    },
+    {
+      "nombre": "Muslo al Ajillo",
+      "submenu_ref": "acompanamientos_carnicos"
+    },
+    {
+      "nombre": "Muslo Braseado al Limón",
+      "submenu_ref": "acompanamientos_carnicos"
+    },
+    {
+      "nombre": "Pastel de Papa y Carne",
+      "submenu": [ ]
+    },
+    {
+      "nombre": "Pechugas al Puerro y Queso Azul",
+      "submenu_ref": "acompanamientos_carnicos"
+    },
+    {
+      "nombre": "Pechugas al Verdeo",
+      "submenu_ref": "acompanamientos_carnicos"
+    },
+    {
+      "nombre": "Pechugas Rellenas",
+      "submenu_ref": "acompanamientos_carnicos"
+    },
+    {
+      "nombre": "Ravioli de Espinaca Mediterráneo",
+      "submenu": [
+        "--",
+        "Salsa de Tomate",
+        "Salsa Blanca",
+        "Salsa Mixta"
+      ]
+    },
+    {
+      "nombre": "Ravioli de Verdura",
+      "submenu": [
+        "--",
+        "Salsa de Tomate",
+        "Salsa Blanca",
+        "Salsa Mixta"
+      ]
+    },
+    {
+      "nombre": "Raviolon de Espinaca y Ricota",
+      "submenu": [
+        "--",
+        "Salsa de Tomate",
+        "Salsa Blanca",
+        "Salsa Mixta"
+      ]
+    },
+    {
+      "nombre": "Suprema de Pollo",
+      "submenu_ref": "acompanamientos_carnicos"
+    },
+    {
+      "nombre": "Suprema Mariland",
+      "submenu_ref": "acompanamientos_carnicos"
+    },
+    {
+      "nombre": "Tapa de Asado Braseada",
+      "submenu_ref": "acompanamientos_carnicos"
+    },
+    {
+      "nombre": "Tallarines a la Parisienne",
+      "submenu": []
+    },
+    {
+      "nombre": "Tallarines al Pesto",
+      "submenu": []
+    },
+    {
+      "nombre": "Tallarines al Pesto de Albahaca",
+      "submenu": []
+    },
+    {
+      "nombre": "Tallarines con Salsa Alfredo",
+      "submenu": []
+    },
+    {
+      "nombre": "Tallarines Mediterráneo",
+      "submenu": []
+    },
+    {
+      "nombre": "Vacío al Horno",
+      "submenu_ref": "acompanamientos_carnicos"
+    },
+    {
+      "nombre": "Ñoquis a la Parisienne",
+      "submenu": []
+    }
+  ],
+  "postre": [
+    {
+      "nombre": "Bombón Suizo",
+      "submenu": []
+    },
+    {
+      "nombre": "Brownie de Chocolate",
+      "submenu": []
+    },
+    {
+      "nombre": "Compota de Manzanas",
+      "submenu": []
+    },
+    {
+      "nombre": "Copa Helada Suteba",
+      "submenu": []
+    },
+    {
+      "nombre": "Crepe de Frutas",
+      "submenu": []
+    },
+    {
+      "nombre": "Crepe de Manzanas y Canela",
+      "submenu": []
+    },
+    {
+      "nombre": "Crumble de Manzana",
+      "submenu": []
+    },
+    {
+      "nombre": "Duraznos en Almibar",
+      "submenu": []
+    },
+    {
+      "nombre": "Ensalada de Frutas",
+      "submenu": [
+        "--",
+        "con Helado"
+      ]
+    },
+    {
+      "nombre": "Flan con Crema",
+      "submenu": [
+        "--",
+        "y Dulce de Leche"
+      ]
+    },
+    {
+      "nombre": "Flan de Naranja",
+      "submenu": []
+    },
+    {
+      "nombre": "Helado Almendrado",
+      "submenu": []
+    },
+    {
+      "nombre": "Helado de Americana",
+      "submenu": []
+    },
+    {
+      "nombre": "Helado de Chocolate",
+      "submenu": []
+    },
+    {
+      "nombre": "Helado Tricolor",
+      "submenu": []
+    },
+    {
+      "nombre": "Manzanas Asadas",
+      "submenu": []
+    },
+    {
+      "nombre": "Mousse de Chocolate",
+      "submenu": []
+    },
+    {
+      "nombre": "Queso y Dulce",
+      "submenu": []
+    },
+    {
+      "nombre": "Tiramisú",
+      "submenu": []
+    },
+    {
+      "nombre": "Budín de Pan",
+      "submenu": [
+        "--",
+        "con Crema"
+      ]
+    }
+  ],
+  "submenu_general": [
+    "con Crema y Canela",
+    "con Crema",
+    "con Dulce de Leche",
+    "y Dulce de Leche",
+    "con Helado",
+    "con Helado y Nueces Garrapiñadas",
+    "con Nueces Tostadas",
+    "con Praline de Frutos Secos",
+    "con Salsa de Chocolate",
+    "con Salsa de Frutos Rojos",
+    "de Chocolate",
+    "Mixto",
+    "y Crema de Arándanos",
+    "y Crema de Caramelo",
+    "y Crema de Limón"
+  ]
+}

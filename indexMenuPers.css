@@ -1,0 +1,160 @@
+@media print {
+    @page {
+        size: auto;
+        margin: 7mm;
+    }
+
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 30px;
+}
+
+header {
+    background-color: #ffffff;
+    color: #262626;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+main {
+    margin: 20px;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+select {
+    font-size: 18pt;
+    text-align: center;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 80%; /* Ajusta el ancho del select */
+    max-width: 400px; /* Establece un máximo ancho */
+}
+
+@media print {
+    select {
+        max-width: 100%;
+        white-space: normal;
+        overflow-x: auto;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    color: #1c1c1c;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    margin-top: 20px;
+}
+
+.print-button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #FFF;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.print-icon {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background-image: url("snowflake1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 15px;
+   
+}
+
+.headImages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.leftIma img {
+    width: 70%;
+}
+
+.rightIma img {
+    width: 50%;
+}
+
+/* Estilos para agrandar la fuente del documento */
+body :not(h1) {
+    font-size: 32px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.has-submenu::after {
+    content: " ▼"; /* Triángulo hacia abajo */
+}
