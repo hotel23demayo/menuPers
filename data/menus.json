@@ -63,6 +63,10 @@
       "submenu": []
     },
     {
+      "nombre": "Ensalada del Cheff",
+      "submenu": []
+    },
+    {
       "nombre": "Fatay",
       "submenu": []
     },
@@ -160,6 +164,10 @@
       "submenu_ref": "acompanamientos_carnicos"
     },
     {
+      "nombre": "Muslitos al Verdeo",
+      "submenu_ref": "acompanamientos_carnicos"
+    },
+    {
       "nombre": "Muslo al Ajillo",
       "submenu_ref": "acompanamientos_carnicos"
     },
@@ -242,7 +250,7 @@
       "submenu_ref": "acompanamientos_postres"
     },
     {
-      "nombre": "Brownie de Chocolate",
+      "nombre": "Brownie",
       "submenu_ref": "acompanamientos_postres"
     },
     {
