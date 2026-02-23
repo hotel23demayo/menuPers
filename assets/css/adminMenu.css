@@ -45,7 +45,7 @@ header {
 
 .rightIma img {
     display: block;
-    height: 70px;
+    height: 91px;
     width: auto;
     object-fit: contain;
 }
@@ -61,6 +61,7 @@ h1 {
     padding: 12px 20px;
     background: #f8f8f8;
     border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
 }
 
 .nav-link {
@@ -155,6 +156,6 @@ textarea {
 
 @media (max-width: 700px) {
     .rightIma img {
-        height: 48px;
+        height: 62px;
     }
 }

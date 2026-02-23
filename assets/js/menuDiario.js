@@ -7,7 +7,9 @@ function cargarMenuDesdeJSON(url) {
             return response.json();
         })
         .then(data => {
-            if (!data.entrada && !data.principal && !data.postre) {
+            const tieneCatalogoBase = data.entrada || data.principal || data.postre;
+            const tieneBloqueDias = data.dias && typeof data.dias === 'object';
+            if (!tieneCatalogoBase && !tieneBloqueDias) {
                 throw new Error("El archivo JSON no tiene la estructura esperada.");
             }
             return data;
@@ -19,6 +21,19 @@ function cargarMenuDesdeJSON(url) {
             console.error('Error al cargar el menú:', error);
             return { entrada: [], principal: [], postre: [] };
         });
+}
+
+function obtenerOpcionesCategoria(menuData, dia, comida, categoria) {
+    const opcionesCatalogo = menuData[categoria] || [];
+    const opcionesDia = menuData.dias?.[dia]?.[comida]?.[categoria];
+
+    if (Array.isArray(opcionesDia) && opcionesDia.length > 0) {
+        const clavesDia = new Set(opcionesDia.map(item => item?.nombre).filter(Boolean));
+        const opcionesCatalogoRestantes = opcionesCatalogo.filter(item => !clavesDia.has(item?.nombre));
+        return [...opcionesDia, ...opcionesCatalogoRestantes];
+    }
+
+    return opcionesCatalogo;
 }
 
 function llenarSelectConOpciones(selectElement, opciones, subMenuElement, dataCompleta) {
@@ -93,43 +108,43 @@ function llenarSelectConOpciones(selectElement, opciones, subMenuElement, dataCo
     updateSubmenu(initialOption);
 }
 
-function cargarMenuDelDia(menuData) {
-    // Almuerzo - usar todos los platos disponibles
+function cargarMenuDelDia(menuData, diaSeleccionado) {
+    // Almuerzo
     llenarSelectConOpciones(
         document.getElementById('almuerzo-entrada-select'),
-        menuData.entrada || [],
+        obtenerOpcionesCategoria(menuData, diaSeleccionado, 'almuerzo', 'entrada'),
         document.getElementById('almuerzo-entrada-submenu'),
         menuData
     );
     llenarSelectConOpciones(
         document.getElementById('almuerzo-principal-select'),
-        menuData.principal || [],
+        obtenerOpcionesCategoria(menuData, diaSeleccionado, 'almuerzo', 'principal'),
         document.getElementById('almuerzo-principal-submenu'),
         menuData
     );
     llenarSelectConOpciones(
         document.getElementById('almuerzo-postre-select'),
-        menuData.postre || [],
+        obtenerOpcionesCategoria(menuData, diaSeleccionado, 'almuerzo', 'postre'),
         document.getElementById('almuerzo-postre-submenu'),
         menuData
     );
 
-    // Cena - usar todos los platos disponibles
+    // Cena
     llenarSelectConOpciones(
         document.getElementById('cena-entrada-select'),
-        menuData.entrada || [],
+        obtenerOpcionesCategoria(menuData, diaSeleccionado, 'cena', 'entrada'),
         document.getElementById('cena-entrada-submenu'),
         menuData
     );
     llenarSelectConOpciones(
         document.getElementById('cena-principal-select'),
-        menuData.principal || [],
+        obtenerOpcionesCategoria(menuData, diaSeleccionado, 'cena', 'principal'),
         document.getElementById('cena-principal-submenu'),
         menuData
     );
     llenarSelectConOpciones(
         document.getElementById('cena-postre-select'),
-        menuData.postre || [],
+        obtenerOpcionesCategoria(menuData, diaSeleccionado, 'cena', 'postre'),
         document.getElementById('cena-postre-submenu'),
         menuData
     );
@@ -140,11 +155,11 @@ function inicializarMenu() {
     
     cargarMenuDesdeJSON('data/menus.json')
         .then(menuData => {
-            cargarMenuDelDia(menuData);
+            const diaActual = diaSelect.value || '1';
+            cargarMenuDelDia(menuData, diaActual);
             
-            // El selector de día solo cambia el día mostrado, no los platos disponibles
             diaSelect.addEventListener('change', () => {
-                // Los platos permanecen iguales, solo cambia el contexto del día
+                cargarMenuDelDia(menuData, diaSelect.value);
             });
         });
 }

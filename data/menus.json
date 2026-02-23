@@ -55,15 +55,19 @@
       ]
     },
     {
-      "nombre": "Ensalada Capresse",
+      "nombre": "Ensalada Caesar con Pollo",
       "submenu": []
     },
     {
-      "nombre": "Ensalada Lucho’s Cheff",
+      "nombre": "Ensalada Caprese",
       "submenu": []
     },
     {
-      "nombre": "Ensalada del Cheff",
+      "nombre": "Ensalada Lucho's Chef",
+      "submenu": []
+    },
+    {
+      "nombre": "Ensalada del Chef",
       "submenu": []
     },
     {
@@ -84,6 +88,10 @@
     },
     {
       "nombre": "Muzzarellitas",
+      "submenu": []
+    },
+    {
+      "nombre": "Muzzarellitas Panadas",
       "submenu": []
     },
     {
@@ -124,6 +132,10 @@
   ],
   "principal": [
     {
+      "nombre": "Bondiola Braseada",
+      "submenu_ref": "acompanamientos_carnicos"
+    },
+    {
       "nombre": "Bondiola Grillada",
       "submenu_ref": "acompanamientos_carnicos"
     },
@@ -140,8 +152,16 @@
       "submenu_ref": "acompanamientos_carnicos"
     },
     {
+      "nombre": "Carne al Horno Braseada",
+      "submenu_ref": "acompanamientos_carnicos"
+    },
+    {
       "nombre": "Carré de Cerdo a la Riojana",
       "submenu_ref": "acompanamientos_carnicos"
+    },
+    {
+      "nombre": "Crepe de Ternera Desmechada en Salsa de Puerros",
+      "submenu": []
     },
     {
       "nombre": "Escalopines de Ternera",
@@ -156,15 +176,23 @@
       "submenu_ref": "salsas_pastas"
     },
     {
+      "nombre": "Milanesa de Peceto Napolitana",
+      "submenu_ref": "acompanamientos_carnicos"
+    },
+    {
       "nombre": "Milanesa de Ternera",
       "submenu_ref": "acompanamientos_carnicos"
     },
     {
-      "nombre": "Muslo Braseado al Limón",
+      "nombre": "Muslitos Deshuesados al Ajillo",
       "submenu_ref": "acompanamientos_carnicos"
     },
     {
       "nombre": "Muslitos al Verdeo",
+      "submenu_ref": "acompanamientos_carnicos"
+    },
+    {
+      "nombre": "Muslo Braseado al Limón",
       "submenu_ref": "acompanamientos_carnicos"
     },
     {
@@ -255,6 +283,10 @@
     },
     {
       "nombre": "Budín de Pan",
+      "submenu_ref": "acompanamientos_postres"
+    },
+    {
+      "nombre": "Casatta Tricolor",
       "submenu_ref": "acompanamientos_postres"
     },
     {
@@ -354,5 +386,172 @@
     "con Salsa de Tomate",
     "con Salsa de Tomate y Carne",
     "con Salsa de Tomate y Queso"
-  ]
+  ],
+  "dias": {
+    "1": {
+      "almuerzo": {
+        "entrada": [],
+        "principal": [],
+        "postre": []
+      },
+      "cena": {
+        "entrada": [
+          {
+            "nombre": "Ensalada Lucho's Chef",
+            "submenu": []
+          }
+        ],
+        "principal": [
+          {
+            "nombre": "Crepe de Ternera Desmechada en Salsa de Puerros",
+            "submenu": []
+          }
+        ],
+        "postre": [
+          {
+            "nombre": "Brownie",
+            "submenu": [
+              "con Helado de Americana"
+            ]
+          }
+        ]
+      }
+    },
+    "2": {
+      "almuerzo": {
+        "entrada": [
+          {
+            "nombre": "Muzzarellitas Panadas",
+            "submenu": [
+              "con Salsa Alexander"
+            ]
+          }
+        ],
+        "principal": [
+          {
+            "nombre": "Muslitos Deshuesados al Ajillo",
+            "submenu": [
+              "con Verduras Asadas"
+            ]
+          }
+        ],
+        "postre": [
+          {
+            "nombre": "Helado Almendrado",
+            "submenu": []
+          }
+        ]
+      },
+      "cena": {
+        "entrada": [
+          {
+            "nombre": "Ensalada Caesar con Pollo",
+            "submenu": []
+          }
+        ],
+        "principal": [
+          {
+            "nombre": "Milanesa de Peceto Napolitana",
+            "submenu_ref": "acompanamientos_carnicos"
+          }
+        ],
+        "postre": [
+          {
+            "nombre": "Bombón Suizo",
+            "submenu_ref": "acompanamientos_postres"
+          }
+        ]
+      }
+    },
+    "3": {
+      "almuerzo": {
+        "entrada": [
+          {
+            "nombre": "Ensalada Caprese",
+            "submenu": []
+          }
+        ],
+        "principal": [
+          {
+            "nombre": "Bondiola Braseada",
+            "submenu_ref": "acompanamientos_carnicos"
+          }
+        ],
+        "postre": [
+          {
+            "nombre": "Budín de Pan",
+            "submenu_ref": "acompanamientos_postres"
+          }
+        ]
+      },
+      "cena": {
+        "entrada": [
+          {
+            "nombre": "Empanadas Criollas",
+            "submenu": []
+          }
+        ],
+        "principal": [
+          {
+            "nombre": "Suprema de Pollo",
+            "submenu": [
+              "con Arroz Pilaff"
+            ]
+          }
+        ],
+        "postre": [
+          {
+            "nombre": "Casatta Tricolor",
+            "submenu": []
+          }
+        ]
+      }
+    },
+    "4": {
+      "almuerzo": {
+        "entrada": [
+          {
+            "nombre": "Bruschetta Mediterránea",
+            "submenu": []
+          }
+        ],
+        "principal": [
+          {
+            "nombre": "Tallarines a la Parisienne",
+            "submenu": []
+          }
+        ],
+        "postre": [
+          {
+            "nombre": "Crumble de Manzana",
+            "submenu": [
+              "con Helado"
+            ]
+          }
+        ]
+      },
+      "cena": {
+        "entrada": [
+          {
+            "nombre": "Papas Cheddar",
+            "submenu": []
+          }
+        ],
+        "principal": [
+          {
+            "nombre": "Carne al Horno Braseada",
+            "submenu_ref": "acompanamientos_carnicos"
+          }
+        ],
+        "postre": [
+          {
+            "nombre": "Mousse de Chocolate",
+            "submenu": [
+              "con Frutos Rojos"
+            ]
+          }
+        ]
+      }
+    }
+  }
 }

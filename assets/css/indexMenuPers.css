@@ -37,7 +37,7 @@ header {
 
 .rightIma img {
     display: block;
-    height: 76px;
+    height: 99px;
     width: auto;
     object-fit: contain;
 }
@@ -56,7 +56,7 @@ h1 {
     padding: 12px 20px;
     background: #f8f8f8;
     border-bottom: 1px solid #ddd;
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 
 .nav-link {
@@ -209,7 +209,7 @@ footer {
     }
 
     .rightIma img {
-        height: 62px;
+        height: 81px;
     }
 
     section {
@@ -314,7 +314,7 @@ footer {
     }
 
     body.print-compact .rightIma img {
-        height: 62px;
+        height: 81px;
     }
 
     body.print-compact main {

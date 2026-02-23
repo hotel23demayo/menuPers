@@ -27,7 +27,7 @@ MenuPers permite:
 
 ### Menú Pensión Completa de Jubilados (menuDiario.html)
 - Planificación de almuerzo y cena separados
-- Selector de días (1-4) para referencia visual
+- Selector de días (1-4) con opciones específicas por día (bloque `dias`)
 - 6 selectores independientes (3 por comida)
 - Mismo catálogo de platos que media pensión
 - Diseño optimizado para impresión con márgenes reducidos
@@ -37,6 +37,7 @@ MenuPers permite:
 - Interfaz visual para modificar platos disponibles
 - Guardar cambios mediante API REST
 - Gestión de submenús compartidos (acompañamientos, salsas, postres)
+- Edición opcional de menús por día en el bloque `dias`
 
 ## 🛠️ Tecnologías
 
@@ -112,7 +113,7 @@ Se incluye workflow en `.github/workflows/ci.yml` que valida en cada push/PR:
 
 - Sintaxis de scripts shell (`serve.sh`, `sort-menus.sh`)
 - Sintaxis Python del servidor (`server/serve.py`)
-- Validez JSON (`data/menus.json` y `data/menuDiario.json` si existe)
+- Validez JSON (`data/menus.json`)
 
 ## 📁 Estructura del Proyecto
 
@@ -123,8 +124,8 @@ menuPers/
 │   ├── img/                   # Logos e imagenes
 │   └── js/                    # Logica frontend
 ├── data/
-│   ├── menuDiario.json        # Datos auxiliares (opcional)
-│   └── menus.json             # Base de datos de platos (editable)
+│   ├── menuDiario.json        # Archivo auxiliar/legacy (no fuente principal)
+│   └── menus.json             # Fuente única: catálogo + menús por día
 ├── server/
 │   └── serve.py               # Servidor HTTP con API REST
 ├── index.html                 # Página principal con cards de selección
@@ -140,22 +141,33 @@ menuPers/
 
 ```json
 {
-  "entrada": ["Plato 1", "Plato 2"],
+  "entrada": [
+    {
+      "nombre": "Plato 1",
+      "submenu": []
+    }
+  ],
   "principal": [
     {
-      "name": "Plato Principal",
+      "nombre": "Plato Principal",
       "submenu": ["Opción A", "Opción B"]
     }
   ],
   "postre": [
     {
-      "name": "Postre",
+      "nombre": "Postre",
       "submenu_ref": "acompanamientos_postres"
     }
   ],
   "acompanamientos_carnicos": ["Guarnición 1", "Guarnición 2"],
   "salsas_pastas": ["Salsa 1", "Salsa 2"],
-  "acompanamientos_postres": ["Acompañamiento 1", "Acompañamiento 2"]
+  "acompanamientos_postres": ["Acompañamiento 1", "Acompañamiento 2"],
+  "dias": {
+    "1": {
+      "almuerzo": { "entrada": [], "principal": [], "postre": [] },
+      "cena": { "entrada": [], "principal": [], "postre": [] }
+    }
+  }
 }
 ```
 
@@ -197,6 +209,9 @@ El panel admin requiere que `server/serve.py` esté en ejecución para acceder a
 - ✅ Optimizadas reglas de impresión para A4
 - ✅ Integrados estilos de documentos ODT originales
 - ✅ Refactorizado JSON con patrón submenu_ref
+- ✅ Unificada la fuente de datos activa en `data/menus.json` para ambas pantallas
+- ✅ Normalizados nombres de platos y ordenadas listas JSON
+- ✅ Ajustada visualización de impresión A4 y separación superior de cabeceras
 
 ## 🤝 Contribuciones
 

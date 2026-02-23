@@ -8,7 +8,7 @@
       },
       "cena": {
         "entrada": [
-          {"nombre": "Ensalada Lucho's Cheff", "submenu": []}
+          {"nombre": "Ensalada Lucho's Chef", "submenu": []}
         ],
         "principal": [
           {"nombre": "Crepe de Ternera Desmechada en Salsa de Puerros", "submenu": []}
@@ -56,7 +56,7 @@
       },
       "cena": {
         "entrada": [
-          {"nombre": "Empanada Criolla", "submenu": []}
+          {"nombre": "Empanadas Criollas", "submenu": []}
         ],
         "principal": [
           {"nombre": "Suprema de Pollo", "submenu_ref": "acompanamientos_carnicos"}
@@ -92,18 +92,18 @@
     }
   },
   "acompanamientos_carnicos": [
+    "con Arroz Pilaf",
     "con Ensalada del Chef",
+    "con Ensalada Mixta",
+    "con Papas Fritas",
     "con Puré de Batatas",
     "con Puré de Papas",
-    "con Arroz Pilaf",
-    "con Papas Fritas",
-    "con Verduras Asadas",
-    "con Ensalada Mixta"
+    "con Verduras Asadas"
   ],
   "salsas_pastas": [
-    "Salsa de Tomate",
     "Salsa Blanca",
-    "Salsa Mixta"
+    "Salsa Mixta",
+    "Salsa de Tomate"
   ],
   "acompanamientos_postres": [
     "con Crema",
